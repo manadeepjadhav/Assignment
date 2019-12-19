@@ -47,7 +47,7 @@ public class RepositorySearchManagerTest
 	public void testWhenAllProviderReturnRepositories() 
 	{
 		HttpHeaders authHeader = new HttpHeaders();
-		authHeader.set("Authorization", "token  79b1c48c00eb4a24f013deeb38d79b2c5196ae2a");
+		authHeader.set("Authorization", "token 07c8fd957bd4578a31545c4a150e873642d68546");
 		HttpEntity<Object> headerEntity = new HttpEntity<Object>(authHeader);
 		String response1 = "[{id : 1, name : \"Repo1\", owner : {login : \"manadeepjadhav\"},html_url : \"http://example.com/repo1\", ssh_url : \"some ssh url\"}]";
 		ResponseEntity<String> sampleReposne1 = new ResponseEntity<String>(response1, HttpStatus.OK);
@@ -72,7 +72,7 @@ public class RepositorySearchManagerTest
 	public void testWhenOneProviderDoesNotReturnRepositories() 
 	{
 		HttpHeaders authHeader = new HttpHeaders();
-		authHeader.set("Authorization", "token  79b1c48c00eb4a24f013deeb38d79b2c5196ae2a");
+		authHeader.set("Authorization", "token 07c8fd957bd4578a31545c4a150e873642d68546");
 		HttpEntity<Object> headerEntity = new HttpEntity<Object>(authHeader);
 		String response1 = "[{id : 1, name : \"Repo1\", owner : {login : \"manadeepjadhav\"},html_url : \"http://example.com/repo1\", ssh_url : \"some ssh url\"}]";
 		ResponseEntity<String> sampleReposne1 = new ResponseEntity<String>(response1, HttpStatus.OK);
@@ -96,7 +96,7 @@ public class RepositorySearchManagerTest
 	public void testWithOwnerFilter() 
 	{
 		HttpHeaders authHeader = new HttpHeaders();
-		authHeader.set("Authorization", "token  79b1c48c00eb4a24f013deeb38d79b2c5196ae2a");
+		authHeader.set("Authorization", "token 07c8fd957bd4578a31545c4a150e873642d68546");
 		HttpEntity<Object> headerEntity = new HttpEntity<Object>(authHeader);
 		String response1 = "[{id : 1, name : \"Repo1\", owner : {login : \"manadeepjadhav\"},html_url : \"http://example.com/repo1\", ssh_url : \"some ssh url\"}]";
 		ResponseEntity<String> sampleReposne1 = new ResponseEntity<String>(response1, HttpStatus.OK);

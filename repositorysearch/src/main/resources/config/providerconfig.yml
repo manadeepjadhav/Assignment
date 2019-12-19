@@ -2,7 +2,7 @@ providers:
   - provider : GitHub
     url : https://api.github.com/user/repos
     authHeaderName : Authorization
-    authHaederValue : token  79b1c48c00eb4a24f013deeb38d79b2c5196ae2a
+    authHaederValue : token 07c8fd957bd4578a31545c4a150e873642d68546
     idKey : id
     nameKey : name
     ownerKey : owner
