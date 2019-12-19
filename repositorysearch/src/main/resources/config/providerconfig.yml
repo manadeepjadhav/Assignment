@@ -1,0 +1,21 @@
+providers:
+  - provider : GitHub
+    url : https://api.github.com/user/repos
+    authHeaderName : Authorization
+    authHaederValue : token  79b1c48c00eb4a24f013deeb38d79b2c5196ae2a
+    idKey : id
+    nameKey : name
+    ownerKey : owner
+    useidKey : login
+    htmlUrlKey : html_url
+    sshUrlKey  : ssh_url
+  - provider : GitLab
+    url : https://gitlab.com/api/v4/users/manadeepjadhav/projects
+    authHeaderName : Authorization
+    authHaederValue : Bearer gEm9nLwWctdmcyN77EQK
+    idKey : id
+    nameKey : name
+    ownerKey : owner
+    useidKey : name
+    htmlUrlKey : http_url_to_repo
+    sshUrlKey  : ssh_url_to_repo
